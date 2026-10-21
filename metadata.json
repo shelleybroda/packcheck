@@ -1,0 +1,6 @@
+{
+  "name": "PackCheck",
+  "description": "A reusable visual packing checklist with Gemini camera recognition for college routines.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

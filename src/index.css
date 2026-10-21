@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-ivory: #FAF8F5;
+    --surface-card: #FFFFFF;
+    --border-warm: rgba(27, 59, 43, 0.08);
+    --forest-deep: #163323;
+    --forest-subtle: #2A4836;
+    --forest-light: #EBF3EE;
+    --accent-orange: #D96B27;
+    --accent-orange-light: #FFF4ED;
+    --text-muted: #57685D;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-ivory);
+    color: var(--forest-deep);
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Safe area padding utilities for iOS bottom bar and notch */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
+}
+
+/* Custom checkbox animation */
+input[type="checkbox"] {
+  accent-color: #163323;
+}
